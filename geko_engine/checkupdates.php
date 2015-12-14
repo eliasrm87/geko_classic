@@ -13,7 +13,7 @@ function geko_check_update( $transient ) {
     $theme_uri_slug = substr($theme_slug, 0, -7);
     
     $remote_version = '0.0.0';
-    $style_css = wp_remote_get("https://raw.githubusercontent.com/IgekoSC/".$theme_uri_slug."/c418f672482dc0ba473c5a83b13699b50bf2fe26/style.css")['body'];
+    $style_css = wp_remote_get("https://raw.githubusercontent.com/IgekoSC/".$theme_uri_slug."/master/style.css")['body'];
     if ( preg_match( '/^[ \t\/*#@]*' . preg_quote( 'Version', '/' ) . ':(.*)$/mi', $style_css, $match ) && $match[1] )
         $remote_version = _cleanup_header_comment( $match[1] );
     
