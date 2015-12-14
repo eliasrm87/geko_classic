@@ -1,0 +1,1 @@
+# Wordpress classic responsive theme
