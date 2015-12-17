@@ -3,7 +3,6 @@
       <head>
       <meta charset="<?php bloginfo( 'charset' ); ?>" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <title><?php if(is_home()) { echo bloginfo("name"); echo " | "; echo bloginfo("description"); } else { echo wp_title(" | ", false, "right"); echo bloginfo("name"); } ?></title>
       <meta name="description" content="<?php bloginfo( 'description' ); ?>">
       <meta name="keywords" content="<?php echo get_option('keywords', ''); ?>" />
       <meta property="og:locale" content="<?php echo get_locale() ?>" />
@@ -22,7 +21,7 @@
       <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
       <?php wp_head(); ?>
    </head>
-   <body>
+   <body <?php body_class(); ?>>
       <?php if (get_option('geko_show_top_123') == "yes"): ?>
       <div class="top" style="height: <?php echo get_option('geko_top_123_height') ?>px;">
          <div class="<?php echo get_option('geko_content_width_style') ?>">

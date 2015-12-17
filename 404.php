@@ -3,6 +3,6 @@
  * Pagina no encontrada
  * Tema Igeko RWD
  */
-header("Location: ".get_bloginfo('url'));
+header("Location: ".home_url());
 ?>
 
