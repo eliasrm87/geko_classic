@@ -8,6 +8,13 @@ function geko_engine_setup()
     // Switches default core markup for search form, comment form, and comments
     // to output valid HTML5.
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+    /*
+    * Let WordPress manage the document title.
+    * By adding theme support, we declare that this theme does not use a
+    * hard-coded <title> tag in the document head, and expect WordPress to
+    * provide it for us.
+    */
+    add_theme_support( 'title-tag' );
 }
 add_action('after_setup_theme', 'geko_engine_setup');
 
@@ -46,7 +53,7 @@ add_filter('excerpt_length', 'geko_custom_excerpt_length', 999);
 function geko_disable_self_pings(&$links)
 {
     foreach ($links as $l => $link)
-        if (0 === strpos($link, get_option('home')))
+        if (0 === strpos($link, home_url()))
             unset($links[$l]);
 }
 add_action('pre_ping', 'geko_disable_self_pings');

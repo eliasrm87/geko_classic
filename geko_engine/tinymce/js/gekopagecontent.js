@@ -1,32 +1,32 @@
 (function() {
-    tinymce.create('tinymce.plugins.GekoYouTube', {
+    tinymce.create('tinymce.plugins.GekoPageContent', {
         init : function(editor, url) {
             // Add a button that opens a window
-            editor.addButton('gekoyoutube', {
-                title: 'Insert YouTube video',
-                image: url+'/../img/youtube.png',
+            editor.addButton('gekopagecontent', {
+                title: 'Show other page content',
+                image: url+'/../img/gekopagecontent.png',
                 onclick: function() {
                     // Open window
                     editor.windowManager.open({
-                        title: 'Insert YouTube video',
+                        title: 'Show other page content',
                         body: [
-                            {type: 'textbox', name: 'url', label: 'Video ID or URL:'}
+                            {type: 'form', items: [
+                                {type: 'combobox', name: 'id', label: 'Page id:',
+                                    values: geko_pagecontent_ids,
+                                },
+                            ]}
                         ],
                         onsubmit: function(e) {
-                            idPattern = /(?:(?:[^v]+)+v.)?([^&=]{11})(?=&|$)/;
-                            var m = idPattern.exec(e.data.url);
-                            if (m != null && m != 'undefined')
                             // Insert content when the window form is submitted
-                            // http://archive.tinymce.com/wiki.php/api4:namespace.tinymce.ui
-                            editor.insertContent('[embed-responsive src="http://www.youtube.com/embed/'+m[1]+'" aspect="16:9" allowfullscreen="allowfullscreen"]');
+                            editor.insertContent('[page-content id="'+e.data.id+'"]');
                         }
                     });
                 }
             });
 
             // Adds a menu item to the tools menu
-            editor.addMenuItem('gekoyoutube', {
-                text: 'Geko YouTube',
+            editor.addMenuItem('gekopagecontent', {
+                text: 'Show other page content',
                 context: 'tools',
                 onclick: function() {
                     // Open window with a specific url
@@ -50,7 +50,7 @@
         
         getInfo : function() {
             return {
-                longname : "YouTube Shortcode",
+                longname : "Show other page content",
                 author : 'Elías Rodríguez Martín',
                 authorurl : 'http://eliasrm.es/',
                 infourl : 'http://igeko.es/',
@@ -58,5 +58,5 @@
             };
         }
     });
-    tinymce.PluginManager.add('gekoyoutube', tinymce.plugins.GekoYouTube);
+    tinymce.PluginManager.add('gekopagecontent', tinymce.plugins.GekoPageContent);
 })();
