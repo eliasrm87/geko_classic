@@ -453,7 +453,7 @@ article.post, article.page
 }
 
 .image-box .image-box-caption {
-    background: rgba(85, 85, 85, .9);
+    background: #71A2CD
     color: #FFFFFF;
     display: block;
     position: absolute;
@@ -492,7 +492,7 @@ article.post, article.page
 }
 
 .image-box:hover .image-box-caption {
-    opacity: 1;
+    opacity: 0.9;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
