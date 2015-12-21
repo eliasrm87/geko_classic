@@ -8,4 +8,4 @@ It is also based on our Geko Engine, that have lot of generic characteristics ve
 
 ## License
 
-This proyect is licensed under GNU General Public License v3
+This project is licensed under GNU General Public License v3
