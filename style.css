@@ -123,6 +123,12 @@ img.aligncenter
 
 /*############################################# NAV BAR #############################################*/
 
+@media(max-width:992px) {
+   li.menu-item {
+      text-transform: uppercase;
+   }
+}
+
 #nav-wrapper.affix {
     top: 0;
     width: 100%;
@@ -453,7 +459,7 @@ article.post, article.page
 }
 
 .image-box .image-box-caption {
-    background: #71A2CD
+    background: #71A2CD;
     color: #FFFFFF;
     display: block;
     position: absolute;
