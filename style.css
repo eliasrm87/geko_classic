@@ -4,7 +4,7 @@
  Description:  Responsive classic theme
  Author:       Elías Rodríguez Martín
  Author URI:   http://eliasrm.es
- Version:      0.9.5
+ Version:      0.9.6
  License:      GNU General Public License v3 or later
  License URI:  http://www.gnu.org/licenses/gpl-3.0.html
  Tags:         Responsive, CSS3, HTML5
@@ -170,6 +170,7 @@ img.aligncenter
     padding: 5px 0px 5px 10px;
     font-size: 120%;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 /*############################################# POSTS #############################################*/
