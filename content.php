@@ -31,7 +31,7 @@
                 </h2>
                 <?php 
                     if (get_option('geko_front_end_show_edit') == "yes") {
-                        edit_post_link( __( 'Editar', 'igk_rwd' ), '<div class="edit-link"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> ', '</div>' );
+                        edit_post_link( __( 'Edit', 'geko' ), '<div class="edit-link"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> ', '</div>' );
                     }
                 ?>
                 <div class="clear"></div>
@@ -44,8 +44,8 @@
 
     <?php if ( is_single() ||  is_page() ) : ?>
         <div class="entry-content">
-            <?php the_content( __( 'Continuar leyendo <span class="meta-nav">&rarr;</span>', 'igk_rwd' ) ); ?>
-            <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Páginas:', 'igk_rwd' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+            <?php the_content( __( 'Read more <span class="meta-nav">&rarr;</span>', 'geko' ) ); ?>
+            <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'geko' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
         </div><!-- .entry-content -->
     <?php else : ?>
         <div class="entry-summary">
@@ -66,7 +66,7 @@
             <div class="comments-link">
                 <?php  if ( comments_open() && ! is_single() ) : ?>
                     <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                    <?php comments_popup_link(__( '0', 'igk_rwd' ), __( '1', 'igk_rwd' ), __( '%', 'igk_rwd' ) ); ?>
+                    <?php comments_popup_link(__( '0', 'geko' ), __( '1', 'geko' ), __( '%', 'geko' ) ); ?>
                 <?php endif; ?>
             </div>
             <?php if ( get_the_category_list() ) : ?>

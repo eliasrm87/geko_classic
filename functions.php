@@ -6,6 +6,8 @@ require_once('settings.php');
 
 function geko_setup()
 {
+    load_theme_textdomain('geko', get_template_directory() . '/languages');
+
     // This theme uses wp_nav_menu() in two locations.
     register_nav_menu('primary', __('Primary Navigation Menu', 'geko'));
     

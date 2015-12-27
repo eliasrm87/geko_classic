@@ -57,15 +57,15 @@ Template Name: Contacto
                   <div class="clear"></div>
                </div>
                
-               <?php edit_post_link( __( 'Editar', 'igk_rwd' ), '<div class="edit-link"><i class="icon-pencil"></i> ', '</div>' ); ?>
+               <?php edit_post_link( __( 'Edit', 'geko' ), '<div class="edit-link"><i class="icon-pencil"></i> ', '</div>' ); ?>
                
                <div class="clear"></div>
                
             </header>
             
             <div class="entry-content">
-               <?php the_post(); the_content( __( 'Continuar leyendo <span class="meta-nav">&rarr;</span>', 'igk_rwd' ) ); ?>
-               <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Páginas:', 'igk_rwd' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+               <?php the_post(); the_content( __( 'Read more <span class="meta-nav">&rarr;</span>', 'geko' ) ); ?>
+               <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'geko' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
             </div><!-- .entry-content -->
             
             <?php

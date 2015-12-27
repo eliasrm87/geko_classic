@@ -29,7 +29,7 @@ class Geko_Search_Widget extends WP_Widget {
         ?>
         <form role="search" method="get" action="/" style="padding-top: 15px;">
         <div class="input-group">
-            <input type="search" class="form-control" name="s" title="Buscar:" placeholder="<?php echo __( 'Buscar en el sitio...', 'geko'); ?>">
+            <input type="search" class="form-control" name="s" title="Buscar:" placeholder="<?php echo __( 'Search on this site...', 'geko' ); ?>">
             <span class="input-group-btn">
                 <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
             </span>

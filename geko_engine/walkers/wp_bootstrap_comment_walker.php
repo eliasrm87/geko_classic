@@ -57,7 +57,7 @@ class Bootstrap_Comment_Walker extends Walker_Comment {
 				<hr>
 				
 				<div class="list-inline">
-					<?php edit_comment_link( __( 'Edit' ), '<div class="edit-link">', '</div>' ); ?>
+					<?php edit_comment_link( __('Edit', 'geko'), '<div class="edit-link">', '</div>' ); ?>
 
 					<?php
 						comment_reply_link( array_merge( $args, array(
