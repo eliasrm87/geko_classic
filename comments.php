@@ -11,7 +11,7 @@ if ( post_password_required() )
 
         <?php
         if ( comments_open()) {
-            $comment_policy = get_option('comment_policy');
+            $comment_policy = get_option('geko_comment_policy');
             if ($comment_policy != '') {
                 echo $comment_policy;
             }
