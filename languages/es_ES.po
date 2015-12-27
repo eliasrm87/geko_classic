@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Geko Classic 0.9.7\n"
-"POT-Creation-Date: 2015-12-27 19:48+0000\n"
-"PO-Revision-Date: 2015-12-27 19:53+0000\n"
+"POT-Creation-Date: 2015-12-27 23:05+0000\n"
+"PO-Revision-Date: 2015-12-27 23:07+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -89,7 +89,7 @@ msgstr "Menú de navegación primario"
 
 #: geko_engine/walkers/wp_bootstrap_comment_walker.php:50
 msgid "Your comment is awaiting moderation."
-msgstr "Tu cometario está esperando ser aprobado"
+msgstr "Tu comentario está esperando ser aprobado"
 
 #: geko_engine/widgets/search.php:11
 msgid "Search"
@@ -161,7 +161,7 @@ msgstr "Entradas"
 
 #: settings.php:21
 msgid "Show posts author:"
-msgstr "Mostrar aotor en las entradas:"
+msgstr "Mostrar autor en las entradas:"
 
 #: settings.php:23
 msgid "Comments"
