@@ -9,13 +9,14 @@ if ( post_password_required() )
 
 <div id="comments" class="comments-area">
 
-        <?php if ( comments_open() ) : ?>
-            <h5><strong><font color="#060147">POLÍTICA DE COMENTARIOS</font></strong></h5>
-            <p style="text-align: justify;">
-                <i>Este es un espacio para el debate. El respeto y la relaci&oacute;n con el tema del post, son imprescindibles. Y, si te decides a pedir ayuda, por favor, no lo hagas si no vas a responder.
-                Para cualquier otra cuesti&oacute;n, utilizad nuestro formulario de contacto.</i>
-            </p>
-        <?php endif; ?>
+        <?php
+        if ( comments_open()) {
+            $comment_policy = get_option('comment_policy');
+            if ($comment_policy != '') {
+                echo $comment_policy;
+            }
+        }
+        ?>
 
 	<?php if ( have_comments() ) : ?>   
            
