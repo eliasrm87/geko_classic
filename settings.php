@@ -6,7 +6,7 @@ function customize_register($wp_customize) {
     geko_add_option($wp_customize,  'general', 'front_end_show_edit', __('Show edit link on posts and pages:', 'geko'), 'select', array('yes'  => 'yes', 'no' => 'no',));
     geko_add_option($wp_customize,  'general', 'enable_lazy_load', __('Enable lazy load:', 'geko'), 'select', array('yes'  => 'yes', 'no' => 'no',));
 
-    geko_add_section($wp_customize, 'head', __('Head tags', 'geko');
+    geko_add_section($wp_customize, 'head', __('Head tags', 'geko'));
     geko_add_option($wp_customize,  'head', 'keywords', __('Keywords:', 'geko'));
     geko_add_option($wp_customize,  'head', 'custom_head_tags', __('Custom tags:', 'geko'), 'textarea');
     
