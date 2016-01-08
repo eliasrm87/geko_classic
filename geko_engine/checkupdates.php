@@ -10,7 +10,7 @@ function geko_check_update( $transient ) {
     $theme_data = wp_get_theme(wp_get_theme()->template);
     $theme_slug = $theme_data->get_template();
     //Delete '-master' from the end of slug
-    $theme_uri_slug = substr($theme_slug, 0, -7);
+    $theme_uri_slug = preg_replace('/-master$/', '', $theme_slug);
     
     $remote_version = '0.0.0';
     $style_css = wp_remote_get("https://raw.githubusercontent.com/IgekoSC/".$theme_uri_slug."/master/style.css")['body'];
