@@ -87,7 +87,7 @@ function preg_replace_lazy_load($matches)
     // - add empty class attribute if no existing class attribute
     // - set src to placeholder image
     // - add back original src attribute, but rename it to "data-original"
-    $replacement = $matches[1] . 'class="" src="' . '/wp-content/themes/geko_v0/img/grey.gif' . '" data-original' . substr($matches[2], 3) . $matches[3];
+    $replacement = $matches[1] . 'class="" src="' . get_template_directory_uri() . '/img/grey.gif' . '" data-original' . substr($matches[2], 3) . $matches[3];
     
     // add "lazy" class to existing class attribute
     $replacement = preg_replace('/class\s*=\s*"/i', 'class="lazy ', $replacement);
