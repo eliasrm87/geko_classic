@@ -50,6 +50,16 @@
         });
     });
     
+    jQuery(document).ready(function() {
+        var docHeight = jQuery(window).height();
+        var footerBot = jQuery('#footer').position().top + jQuery('#footer').outerHeight();
+        var paginaHeigth = jQuery('.pagina').outerHeight();
+
+        if (footerBot < docHeight) {
+            jQuery('.pagina').css('min-height', paginaHeigth + (docHeight - footerBot) + 'px');
+        }
+    });
+    
 //     jQuery('.chart').each(function(){
 //         var chart = jQuery(this);
 //         chart.waypoint(function(){
