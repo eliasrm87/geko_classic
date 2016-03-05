@@ -4,7 +4,7 @@
  Description:  Responsive classic theme
  Author:       Elías Rodríguez Martín
  Author URI:   http://eliasrm.es
- Version:      0.9.8
+ Version:      0.9.9
  License:      GNU General Public License v3 or later
  License URI:  http://www.gnu.org/licenses/gpl-3.0.html
  Tags:         Responsive, CSS3, HTML5
@@ -176,27 +176,27 @@ img.aligncenter
 /*############################################# POSTS #############################################*/
 
 .wp-caption {
-    
+
 }
 
 .wp-caption-text {
-    
+
 }
 
 .sticky {
-    
+
 }
 
 .screen-reader-text {
-    
+
 }
 
 .gallery-caption {
-    
+
 }
 
 .bypostauthor {
-    
+
 }
 
 article.post.list {
@@ -242,7 +242,7 @@ article.post, article.page
     clear: left;
 }
 .comments-link
-{   
+{
     float: left;
     clear: left;
 }
@@ -537,22 +537,22 @@ article.post, article.page
     margin-bottom: 0px;
 }
 
-.top-center { 
+.top-center {
     right: 40%;
     top: 0;
 }
 
-.right-center { 
+.right-center {
     right: 0;
     top: 40%;
 }
 
-.left-center { 
+.left-center {
     left: 0;
     top: 40%;
 }
 
-.bottom-center { 
+.bottom-center {
     right: 50%;
     bottom: 0;
 }
