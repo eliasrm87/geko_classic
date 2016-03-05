@@ -4,7 +4,7 @@ function geko_engine_setup()
 {
     // Adds RSS feed links to <head> for posts and comments.
     add_theme_support('automatic-feed-links');
-    
+
     // Switches default core markup for search form, comment form, and comments
     // to output valid HTML5.
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
@@ -107,7 +107,7 @@ function geko_show_al_mcel_buttons($buttons)
     $buttons[] = 'sub';
     $buttons[] = 'sup';
     $buttons[] = 'cleanup';
-    
+
     return $buttons;
 }
 add_filter("mce_buttons_3", "geko_show_al_mcel_buttons");
@@ -121,3 +121,9 @@ function geko_remove_script_version($src)
 }
 add_filter('script_loader_src', 'geko_remove_script_version', 15, 1);
 add_filter('style_loader_src', 'geko_remove_script_version', 15, 1);
+
+function geko_footer()
+{
+    require_once(get_template_directory() . '/geko_engine/footer.php');
+}
+add_action( 'wp_footer', 'geko_footer' );

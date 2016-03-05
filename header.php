@@ -8,7 +8,7 @@
       <meta property="og:locale" content="<?php echo get_locale() ?>" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="<?php echo get_site_url(); ?>" />
-      <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>" />   
+      <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="<?php echo get_option('geko_twitter_user_name', ''); ?>" />
       <meta name="twitter:creator" content="<?php echo get_option('geko_twitter_user_name', ''); ?>" />
@@ -58,6 +58,6 @@
             </div>
          </nav>
       </div>
-      
+
 <!--        <div class="" style="height: <?php //echo get_option('top_123_height')+50; ?>px;"></div> -->
       <div class="<?php echo get_option('geko_content_width_style') ?>">

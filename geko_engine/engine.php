@@ -7,6 +7,7 @@ require_once('helpers.php');
 require_once('functions.php');
 require_once('shortcodes.php');
 require_once('checkupdates.php');
+require_once('settings.php');
 //Widgets
 require_once('widgets/search.php');
 //TinyMCE
