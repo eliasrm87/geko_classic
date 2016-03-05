@@ -21,7 +21,7 @@
             });
         <?php endif; ?>
 
-        jQuery("a[href^='#']").on('click', function(e) {
+        jQuery("a[href^='#scroll_']").on('click', function(e) {
             // prevent default anchor click behavior
             e.preventDefault();
 
@@ -30,7 +30,7 @@
 
             // animate
             jQuery('html, body').animate({
-                scrollTop: jQuery(this.hash).offset().top - 70
+                scrollTop: jQuery(this.hash.replace("#scroll_", "#")).offset().top - 70
             }, 600, function() {
                 // when done, add hash to url
                 // (default click behaviour)
