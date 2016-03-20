@@ -4,7 +4,7 @@
  Description:  Responsive classic theme
  Author:       Elías Rodríguez Martín
  Author URI:   http://eliasrm.es
- Version:      0.9.9
+ Version:      0.9.10
  License:      GNU General Public License v3 or later
  License URI:  http://www.gnu.org/licenses/gpl-3.0.html
  Tags:         Responsive, CSS3, HTML5
@@ -556,3 +556,35 @@ article.post, article.page
     right: 50%;
     bottom: 0;
 }
+
+/*############################################# POLYLANG ###############################################*/
+
+.widget_polylang ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.widget_polylang li {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.lang-item img {
+    visibility: hidden;
+}
+
+.widget_polylang .lang-item, .widget_polylang .lang-item img {
+    height: 32px;
+    width: 32px;
+}
+
+.lang-item-es {
+    background: url(img/Spain-Flag.png) no-repeat;
+}
+
+.lang-item-en {
+    background: url(img/UnitedKingdom-Flag.png) no-repeat;
+}
+
