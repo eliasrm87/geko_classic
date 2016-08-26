@@ -11,7 +11,7 @@
  Text Domain:  geko
 */
 
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url("//fonts.googleapis.com/css?family=Droid+Sans");
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
 /* @import url("css/supernice.min.css"); */
 
@@ -61,6 +61,14 @@ blockquote p
 {
     margin: 0 auto;
     text-align: center;
+}
+.pull-left
+{
+    margin-right: 10px;
+}
+.pull-right
+{
+    margin-left: 10px;
 }
 img
 {
