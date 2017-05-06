@@ -5,7 +5,7 @@
 <?php endif; ?>
     <header class="entry-header">
         <?php if ( is_singular() ): ?>
-            <meta property="og:title" content="<?php bloginfo( 'title' ); ?>" />   
+            <meta property="og:title" content="<?php bloginfo( 'title' ); ?>" />
             <meta property="og:description" content="<?php echo esc_attr(strip_tags(get_the_excerpt())); ?>" />
             <meta name="twitter:title" content="<?php the_title(); ?>" />
             <meta name="twitter:description" content="<?php echo esc_attr(strip_tags(get_the_excerpt())); ?>" />
@@ -21,7 +21,7 @@
                     '<span class="year">'.get_the_date("Y").'</span>'.
                     '</div>';
                 ?>
-            
+
                 <h2>
                 <?php if ( is_single() ) : ?>
                     <?php the_title(); ?>
@@ -29,7 +29,7 @@
                     <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
                 <?php endif; ?>
                 </h2>
-                <?php 
+                <?php
                     if (get_option('geko_front_end_show_edit') == "yes") {
                         edit_post_link( __( 'Edit', 'geko' ), '<div class="edit-link"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> ', '</div>' );
                     }
@@ -37,9 +37,9 @@
                 <div class="clear"></div>
             </div>
         <?php endif; ?>
-        
+
         <div class="clear"></div>
-        
+
     </header>
 
     <?php if ( is_single() ||  is_page() ) : ?>
@@ -60,11 +60,11 @@
     <?php endif; ?>
 
     <div class="clear"></div>
-    
+
     <div class="entry-meta">
         <div>
             <div class="comments-link">
-                <?php  if ( comments_open() && ! is_single() ) : ?>
+                <?php  if ( comments_open() && ! is_single() && (get_option('geko_show_comments_count') == "yes")) : ?>
                     <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
                     <?php comments_popup_link(__( '0', 'geko' ), __( '1', 'geko' ), __( '%', 'geko' ) ); ?>
                 <?php endif; ?>

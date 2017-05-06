@@ -22,6 +22,7 @@ function geko_customize_register($wp_customize) {
 
     geko_add_section($wp_customize, 'comments', __('Comments', 'geko'));
     geko_add_option($wp_customize,  'comments', 'comment_policy', __('Comment policy text:', 'geko'), 'textarea');
+    geko_add_option($wp_customize,  'comments', 'show_comments_count', __('Show comments count:', 'geko'), 'select', array('yes'  => 'yes', 'no' => 'no',));
 
     geko_add_section($wp_customize, 'pages', __('Pages', 'geko'));
     geko_add_option($wp_customize,  'pages', 'show_pages_author', __('Show pages author:', 'geko'), 'select', array('yes'  => 'yes', 'no' => 'no',));
