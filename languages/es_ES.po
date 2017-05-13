@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Geko Classic 0.9.7\n"
-"POT-Creation-Date: 2017-05-06 22:21+0100\n"
-"PO-Revision-Date: 2017-05-06 22:22+0100\n"
+"POT-Creation-Date: 2017-05-13 20:22+0100\n"
+"PO-Revision-Date: 2017-05-13 20:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: comments.php:58
 msgid "Comment navigation"
-msgstr "Navegación de comentarios:"
+msgstr "Navegación de comentarios"
 
 #: comments.php:59
 msgid "&larr; Older Comments"
@@ -30,7 +30,7 @@ msgstr "Comentarios posteriores"
 
 #: comments.php:65
 msgid "Comments are closed."
-msgstr "Los comentarios están cerrados"
+msgstr "Los comentarios están cerrados."
 
 #: contact.php:60 content.php:34
 #: geko_engine/walkers/wp_bootstrap_comment_walker.php:60
@@ -44,6 +44,70 @@ msgstr "Continuar leyendo <span class=\"meta-nav\">&rarr;</span>"
 #: contact.php:68 content.php:48
 msgid "Pages:"
 msgstr "Páginas:"
+
+#: contact.php:76
+msgid "Tell us your name"
+msgstr "Dinos tu nombre"
+
+#: contact.php:79
+msgid "Your email address seems to be incorrect"
+msgstr "Tu dirección de email parece incorrecta"
+
+#: contact.php:82
+msgid "Don't forget your message ;-)"
+msgstr "No olvides tu mensaje ;-)"
+
+#: contact.php:85
+msgid "Your secret question answer"
+msgstr "Tu respuesta a la pregunta secreta"
+
+#: contact.php:92
+msgid "Your message has been sent, we will answer you as soon as possible."
+msgstr "Tu mensaje ha sido enviado, te responderemos lo antes posible"
+
+#: contact.php:94
+msgid "Ops, something went wrong:"
+msgstr "Ups, algo no ha salido bien:"
+
+#: contact.php:98
+msgid "Name"
+msgstr "Nombre"
+
+#: contact.php:98 contact.php:102 contact.php:110 contact.php:114
+msgid "(requiered)"
+msgstr "(requerido)"
+
+#: contact.php:102
+msgid "Email"
+msgstr "Email"
+
+#: contact.php:106
+msgid "Subject:"
+msgstr "Asunto:"
+
+#: contact.php:110
+msgid "Your message"
+msgstr "Tu mensaje"
+
+#: contact.php:114
+msgid "How much you need to add to "
+msgstr "Cuanto hay que sumarle a "
+
+#: contact.php:114
+msgid "to obtain "
+msgstr "para obtener "
+
+#: contact.php:115
+msgid "Tip"
+msgstr "Pista"
+
+#: contact.php:115
+msgid "minus"
+msgstr "menos"
+
+#: contact.php:120
+msgid "Send"
+msgstr "Enviar"
 
 #: content-none.php:15
 msgid "Nothing Found"
@@ -214,6 +278,9 @@ msgstr "Social"
 #: settings.php:36
 msgid "Twitter user name:"
 msgstr "Nombre de usuario de Twitter:"
+
+#~ msgid "Your name"
+#~ msgstr "Tu nombre"
 
 #~ msgid "Nothing found."
 #~ msgstr "No se ha encontrado nada."
